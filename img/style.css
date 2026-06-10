@@ -6,9 +6,16 @@
 }
 
 body{
-    background:#f4f9f4;
-    color:#333;
+    background: linear-gradient(
+        to bottom,
+        #1b5e20,
+        #2e7d32,
+        #4caf50,
+        #81c784
+    );
+    color:#ffffff;
     line-height:1.6;
+    min-height:100vh;
 }
 
 header{
@@ -28,9 +35,12 @@ header p{
 }
 
 nav{
-    background:#1b5e20;
+    background:#145a1f;
     text-align:center;
     padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
@@ -83,7 +93,17 @@ h2{
     background:white;
     border-radius:10px;
     overflow:hidden;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-content{
+    padding:20px;
+    color:#333;
+}
+
+h2{
+    color:#e8f5e9;
+    margin-bottom:20px;
 }
 
 .card img{
